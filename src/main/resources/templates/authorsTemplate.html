@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Springdev</title>
+</head>
+<body>
+
+<h1>Author list</h1>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Surname</th>
+    </tr>
+
+    <tr th:each="author : ${authorData}">
+        <td th:text="${author.id}">123</td>
+        <td th:text="${author.firstName}">Ole</td>
+        <td th:text="${author.lastName}">Tsy</td>
+    </tr>
+</table>
+
+</body>
+</html>
